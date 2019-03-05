@@ -1,2 +1,2 @@
 # CRIPP
-Corruption Risk Indicators in Mexican Public Procurement (CRIPP) dashboard
+Corruption Risk Indicators in Mexican Public Procurement (CRIMPP) dashboard
