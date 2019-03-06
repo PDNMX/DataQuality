@@ -1,2 +1,2 @@
-# CRIMPP
-Corruption Risk Indicators in Mexican Public Procurement (CRIMPP) dashboard
+# KUAYOLO
+Vigilancia inteligente de las licitaciones públicas mexicanas
