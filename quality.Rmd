@@ -1,0 +1,66 @@
+---
+title: "quality"
+author: "Mexico"
+date: "August 7, 2019"
+output: html_document
+---
+
+```{r, echo=FALSE}
+library(readr)
+library(dplyr)
+library(ggplot2)
+```
+
+```{r, echo=FALSE}
+setwd("/home/mora/quality")
+```
+
+#Lectura de datos
+```{r, echo=FALSE}
+resul <- read_csv("resul_calidad.csv", col_names = TRUE)
+```
+
+#Impresión de gráficas
+
+```{r, echo=FALSE}
+hist(resul$data_quality_eval, main="Histograma de la calidad de los datos", 
+     xlab="Calidad de datos (0-5)", ylab="Frecuencia",
+     border="#5d5b5c", 
+     col="#3cb1e6",
+     xlim=c(0,5), breaks=5)
+
+hist(resul$disponibilidad, main="Histograma de la disponibilidad", 
+     xlab="1.Disponibilidad (0-1)", ylab="Frecuencia",
+     border="#5d5b5c", 
+     col="#3cb1e6",
+     xlim=c(0,1), ylim=c(0,45), breaks=3, las=1)
+
+hist(resul$integridad, main="Histograma de la integridad", 
+     xlab="2. Integridad (0-1)", ylab="Frecuencia",
+     border="#5d5b5c", 
+     col="#3cb1e6",
+     xlim=c(0,1), ylim=c(0,45), breaks=1, las=1)
+
+hist(resul$validez, main="Histograma de la validez", 
+     xlab="3. Validez (0-1)", ylab="Frecuencia",
+     border="#5d5b5c", 
+     col="#3cb1e6",
+     xlim=c(0,1), ylim=c(0,45), breaks=3, las=1)
+
+hist(resul$procesabilidad, main="Histograma de la procesabilidad", 
+     xlab="4. Procesabilidad (0-1)", ylab="Frecuencia",
+     border="#5d5b5c", 
+     col="#3cb1e6",
+     xlim=c(0,1), ylim=c(0,45), breaks=4, las=1)
+
+
+hist(resul$relevancia_analítica, main="Histograma de la relevancia analítica", 
+     xlab="5. Relevancia analítica (0-1)", ylab="Frecuencia",
+     border="#5d5b5c", 
+     col="#3cb1e6",
+     xlim=c(0,1), ylim=c(0,45), breaks=1, las=1)
+
+
+```
+
+
