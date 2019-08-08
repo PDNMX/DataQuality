@@ -1,5 +1,3 @@
-# CRIMPP
+# Data Quality Evaluation
 
-Corruption Risk Indicator of Mexican Public Procurement
-
-Vigilancia inteligente de las licitaciones públicas mexicanas
+Evaluación de los conjuntos de datos de la Guía de Apertura Anticorrupción usando una propuesta de metología analítica.
